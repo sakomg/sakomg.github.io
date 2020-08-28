@@ -4,7 +4,6 @@
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/fishand4ips/me.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://fishand4ips.github.io/me.github.io/)
-[![Author](https://img.shields.io/badge/Author-Aditya%20Vikram%20Singh-blue.svg)](https://www.linkedin.com/in/sasha-komegunov/)
 [![Latest Release](https://img.shields.io/badge/Latest%20Release-12%20August%202020-yellow.svg)](https://github.com/fishand4ips/me.github.io/commits/master)
 
 <p align="justify">This website serves as an online portfolio to showcase my web presence, resume, story.</p>
