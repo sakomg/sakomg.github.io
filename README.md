@@ -9,4 +9,5 @@
 <p align="justify">This website serves as an online portfolio to showcase my web presence, resume, story.</p>
 
 Please hit me up at <a href ="alekomegunov@gmail.com">alekomegunov@gmail.com</a> if you have any feedback or ideas for the website.
-Leave a :star: &nbsp;if you like it!
+Leave a :star:&nbsp; if you like it!
+
