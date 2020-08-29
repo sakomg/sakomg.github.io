@@ -2,7 +2,7 @@
 
 # <a href="http://www.fishand4ips.tk" target="_blank">My Portfolio Website</a>
 
-[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](http://www.fishand4ips.tk)
+[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/fishand4ips/me.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](http://www.fishand4ips.tk)
 [![Latest Release](https://img.shields.io/badge/Latest%20Release-29%20August%202020-yellow.svg)](https://github.com/fishand4ips/me.github.io/commits/master)
 
