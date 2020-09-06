@@ -10,5 +10,19 @@
 
 <p align="justify">This website serves as an online portfolio to showcase my web presence, resume, story.</p>
 
-Please hit me up at <a href ="alekomegunov@gmail.com">alekomegunov@gmail.com</a> if you have any feedback or ideas for the website.
+## Features
+
+- Clean, Simple and Modern UI Design.
+- Uses No CSS or JavaScript Frameworks or libraries as dependencies.
+- Built with only HTML, CSS and a bit of JavaScript 🔨.
+- Loads fast ⚡.
+
+## Getting Started 🚀
+
+You'll need [Git](https://git-scm.com) to be installed on your computer. 
+```
+# clone this repository
+$ git clone https://github.com/fishand4ips/me.github.io.git
+```
+
 Leave a :star: if you like it!
