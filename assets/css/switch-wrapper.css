@@ -47,6 +47,10 @@ html .night .project-link{
     color: #cc156f;
 }
 
+html .night .devicon-github-plain {
+    color: #6e5494;
+}
+
 html .night .project-link:active,
 html .night .project-link:hover {
     background-color: #a115b2;
