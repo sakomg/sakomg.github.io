@@ -3,6 +3,11 @@ body .night, html .night {
     color: #e7e7e7
 }
 
+body .night::selection, html .night ::selection {
+    background-color: #171c28;
+    color: #a115b2;
+}
+
 body.night .switch-wrapper .sun, html.night .switch-wrapper .sun {
     background: url(../img/sun.svg) no-repeat center;
     background-size: 100%
