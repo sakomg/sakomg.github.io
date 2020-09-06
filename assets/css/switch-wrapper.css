@@ -4,20 +4,20 @@ body .night, html .night {
 }
 
 body.night .switch-wrapper .sun, html.night .switch-wrapper .sun {
-    background: url(../img/sun-white.svg) no-repeat center;
+    background: url(../img/sun.svg) no-repeat center;
     background-size: 100%
 }
 
 body.night .switch-wrapper .moon, html.night .switch-wrapper .moon {
-    background: url(../img/moon-white.svg) no-repeat center;
+    background: url(../img/moon.svg) no-repeat center;
     background-size: 100%
 }
 
-body.night h1, body.night h2, body.night header, body.night .site-title, body.night .site-description, html.night strong, body.night span {
+body.night h1, body.night h2, html.night strong {
     color: #e7e7e7
 }
 
-body.night a {
+body.night a, body.night span, body.night header, body.night .site-title, body.night .site-description {
     color: #171c28;
 }
 
@@ -30,8 +30,8 @@ body.night #particles-js {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body.night .underline-link:after, body.header-links, html.night .underline-link:after {
-    background: #e7e7e7
+body.night .underline-link:after, html .night .header-links .link{
+    color: #171c28
 }
 
 html .night .face {
@@ -39,7 +39,8 @@ html .night .face {
 }
 
 html .night .header-icons .icon {
-    border: 2px solid  #e7e7e7
+    border: 2px solid  #171c28;
+    color: #171c28;
 }
 
 html .night .project-link{
@@ -55,13 +56,12 @@ html .night .project-link:active,
 html .night .project-link:hover {
     background-color: #a115b2;
     border-color: #a115b2;
-    color: #e7e7e7;
-    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+    color: #171c28;
 }
 
 html .night .header-icons .icon:active, html .night .header-icons .icon:hover {
     color: #a115b2;
-    background: #e7e7e7;
+    background: #171c28;
 }
 
 .switch-wrapper {
@@ -92,12 +92,12 @@ html .night .header-icons .icon:active, html .night .header-icons .icon:hover {
 }
 
 .switch-wrapper .sun {
-    background: url(../img/sun.svg) no-repeat center;
+    background: url(../img/sun-white.svg) no-repeat center;
     background-size: 100%
 }
 
 .switch-wrapper .moon {
-    background: url(../img/moon.svg) no-repeat center;
+    background: url(../img/moon-white.svg) no-repeat center;
     background-size: 100%
 }
 
@@ -146,6 +146,10 @@ html .night .header-icons .icon:active, html .night .header-icons .icon:hover {
     border-radius: 100%
 }
 
+html .night .switch-wrapper .toggle-wrapper label:after {
+    background: #171c28;
+}
+
 html .night .footer {
     background: #a115b2;
     /* fallback for old browsers */
@@ -153,7 +157,7 @@ html .night .footer {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #a115b2, #cc156f);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #e7e7e7;
+    color: #171c28;
 }
 
 html .night .footer .love {
@@ -163,5 +167,5 @@ html .night .footer .love {
 html .night .footer a {
     text-decoration: none;
     margin: 0;
-    color: #e7e7e7;
+    color:  #171c28;
 }
