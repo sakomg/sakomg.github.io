@@ -1,0 +1,163 @@
+body .night, html .night {
+    background-color: #171c28;
+    color: #e7e7e7
+}
+
+body.night .switch-wrapper .sun, html.night .switch-wrapper .sun {
+    background: url(../img/sun-white.svg) no-repeat center;
+    background-size: 100%
+}
+
+body.night .switch-wrapper .moon, html.night .switch-wrapper .moon {
+    background: url(../img/moon-white.svg) no-repeat center;
+    background-size: 100%
+}
+
+body.night h1, body.night h2, body.night header, body.night .site-title, body.night .site-description, html.night strong, body.night span {
+    color: #e7e7e7
+}
+
+body.night a {
+    color: #171c28;
+}
+
+body.night #particles-js {
+    background: #a115b2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a115b2, #cc156f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a115b2, #cc156f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body.night .underline-link:after, body.header-links, html.night .underline-link:after {
+    background: #e7e7e7
+}
+
+html .night .face {
+    border: 1px solid #a115b2;
+}
+
+html .night .header-icons .icon {
+    border: 2px solid  #e7e7e7
+}
+
+html .night .project-link{
+    border: 1px solid #cc156f;
+    color: #cc156f;
+}
+
+html .night .project-link:active,
+html .night .project-link:hover {
+    background-color: #a115b2;
+    border-color: #a115b2;
+    color: #e7e7e7;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+html .night .header-icons .icon:active, html .night .header-icons .icon:hover {
+    color: #a115b2;
+    background: #e7e7e7;
+}
+
+.switch-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 30px
+}
+
+@media screen and (max-width: 480px) {
+    .switch-wrapper {
+        top: 10px;
+        right: 20px
+    }
+}
+
+.switch-wrapper .moon, .switch-wrapper .sun {
+    width: 17px;
+    height: 17px
+}
+
+.switch-wrapper .sun {
+    background: url(../img/sun.svg) no-repeat center;
+    background-size: 100%
+}
+
+.switch-wrapper .moon {
+    background: url(../img/moon.svg) no-repeat center;
+    background-size: 100%
+}
+
+.switch-wrapper .toggle-wrapper {
+    margin: 10px
+}
+
+.switch-wrapper .toggle-wrapper #switch {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute
+}
+
+.switch-wrapper .toggle-wrapper #switch:checked + label {
+    background: #75bbfd;
+}
+
+.switch-wrapper .toggle-wrapper #switch:checked + label:after {
+    left: calc(100% - 3px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.switch-wrapper .toggle-wrapper label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 45px;
+    height: 25px;
+    background: #FF7F50;
+    display: block;
+    border-radius: 100px;
+    position: relative
+}
+
+.switch-wrapper .toggle-wrapper label:after {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background: #e7e7e7;
+    border-radius: 100%
+}
+
+html .night .footer {
+    background: #a115b2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a115b2, #cc156f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a115b2, #cc156f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #e7e7e7;
+}
+
+html .night .footer .love {
+    color: red
+}
+
+html .night .footer a {
+    text-decoration: none;
+    margin: 0;
+    color: #e7e7e7;
+}
