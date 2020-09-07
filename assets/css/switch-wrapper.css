@@ -151,6 +151,10 @@ html .night .header-icons .icon:active, html .night .header-icons .icon:hover {
     border-radius: 100%
 }
 
+html .night .wrapper > div {
+    color: #a115b2;
+}
+
 html .night .switch-wrapper .toggle-wrapper label:after {
     background: #171c28;
 }
