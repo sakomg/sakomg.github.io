@@ -155,6 +155,10 @@ html .night .wrapper > div {
     color: #a115b2;
 }
 
+html .night .wrapper > div:after {
+    background: #e7e7e7;
+}
+
 html .night .switch-wrapper .toggle-wrapper label:after {
     background: #171c28;
 }
