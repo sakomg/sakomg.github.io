@@ -5102,3 +5102,11 @@ a img {
     margin: 0;
     color: #fff
 }
+
+.git-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 5px;
+}

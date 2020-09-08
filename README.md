@@ -16,7 +16,7 @@ This [website](https://me.fishand4ips.tk/) serves as an online portfolio to show
 ✔️ Contact me\
 ✔️ About me\
 ✔️ Skills \
-✔️ Featured projects\
+✔️ Featured projects
 
 To view a live example, **[click here](https://me.fishand4ips.tk/)**
 
@@ -24,7 +24,7 @@ To view a live example, **[click here](https://me.fishand4ips.tk/)**
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
-## Features
+## Features :zap:
 
 - Clean, Simple and Modern UI Design.
 - Uses No CSS or JavaScript Frameworks or libraries as dependencies.
