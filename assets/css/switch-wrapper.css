@@ -40,7 +40,7 @@ body.night .underline-link:after, html .night .header-links .link{
 }
 
 html .night .face {
-    border: 1px solid #a115b2;
+    border: 3px solid #a115b2;
 }
 
 html .night .header-icons .icon {
