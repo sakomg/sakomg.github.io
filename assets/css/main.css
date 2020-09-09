@@ -5110,3 +5110,12 @@ a img {
     margin-left: 2px;
     margin-right: 5px;
 }
+
+.name {
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #e7e7e7;
+    font-size: 1.5rem;
+}
