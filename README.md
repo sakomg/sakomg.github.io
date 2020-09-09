@@ -29,7 +29,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 - Clean, Simple and Modern UI Design.
 - Uses No CSS or JavaScript Frameworks or libraries as dependencies.
 - Built with only HTML, CSS and a bit of JavaScript 🔨.
-- Loads fast ⚡.
+- Loads fast.
 
 ## Getting Started 🚀
 
