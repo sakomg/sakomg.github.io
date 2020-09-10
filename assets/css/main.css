@@ -5128,3 +5128,19 @@ a img {
         font-size: 35px
     }
 }
+
+.maven {
+    fill: #00a818;
+}
+
+.size-skills {
+    height: 75px;
+    width: 75px;
+}
+
+@media all and (max-width: 555px){
+    .size-skills {
+        height: 60px;
+        width: 60px;
+    }
+}
