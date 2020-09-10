@@ -39,7 +39,7 @@ body.night #particles-js {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body.night .underline-link:after, html .night .header-links .link{
+body.night .underline-link:after, html .night .header-links .link {
     color: #171c28
 }
 
@@ -48,11 +48,11 @@ html .night .face {
 }
 
 html .night .header-icons .icon {
-    border: 2px solid  #171c28;
+    border: 2px solid #171c28;
     color: #171c28;
 }
 
-html .night .project-link{
+html .night .project-link {
     border: 1px solid #cc156f;
     color: #cc156f;
 }
@@ -184,5 +184,5 @@ html .night .footer .love {
 html .night .footer a {
     text-decoration: none;
     margin: 0;
-    color:  #171c28;
+    color: #171c28;
 }
