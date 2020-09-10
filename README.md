@@ -22,7 +22,7 @@ To view a live example, **[click here](https://me.fishand4ips.tk/)**
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Features :zap:
 
