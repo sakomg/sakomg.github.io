@@ -5111,11 +5111,20 @@ a img {
     margin-right: 5px;
 }
 
-.name {
-    padding: 25px;
-    position: absolute;
-    left: 0;
-    font-weight: 700;
-    color: #e7e7e7;
-    font-size: 1.5rem;
+.error {
+    font-size: 25px;
+    display: block;
+    line-height: 1.2;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.error-link-home {
+    color: #FF7F50;
+}
+
+@media only screen and (min-width:550px) {
+    .error {
+        font-size: 35px
+    }
 }
