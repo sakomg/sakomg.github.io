@@ -5136,11 +5136,13 @@ a img {
 .size-skills {
     height: 75px;
     width: 75px;
+    margin-bottom: -3.5px;
 }
 
 @media all and (max-width: 555px){
     .size-skills {
         height: 60px;
         width: 60px;
+        margin-bottom: -3.5px;
     }
 }
