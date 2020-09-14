@@ -52,6 +52,10 @@ html .night .header-icons .icon {
     color: #171c28;
 }
 
+html .night .down {
+    color: #171c28;
+}
+
 html .night .project-link {
     border: 1px solid #cc156f;
     color: #cc156f;
