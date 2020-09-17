@@ -5061,7 +5061,7 @@ a img {
 .project-link {
     display: inline-block;
     margin-top: 8px;
-    padding: 5px;
+    padding: 5px 6px 5px 5px;
     color: #1488CC;
     background-color: transparent;
     border: 1px solid #1488CC;
@@ -5107,7 +5107,7 @@ a img {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 3px;
-    margin-left: 2px;
+    margin-left: 1px;
     margin-right: 5px;
 }
 
