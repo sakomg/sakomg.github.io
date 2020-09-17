@@ -4980,7 +4980,7 @@ a img {
 @media only screen and (min-width:550px) {
     .user {
         flex-wrap: nowrap;
-        font-size: 75px
+        font-size: 60px
     }
 }
 
@@ -5134,15 +5134,15 @@ a img {
 }
 
 .size-skills {
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
     margin-bottom: -3.5px;
 }
 
-@media all and (max-width: 555px){
-    .size-skills {
-        height: 60px;
-        width: 60px;
-        margin-bottom: -3.5px;
-    }
-}
+/*@media all and (max-width: 555px){*/
+/*    .size-skills {*/
+/*        height: 60px;*/
+/*        width: 60px;*/
+/*        margin-bottom: -3.5px;*/
+/*    }*/
+/*}*/
