@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 type: "polygon",
                 stroke: {width: 0, color: "#000000"},
                 polygon: {nb_sides: 5},
-                image: {src: "img/github.svg", width: 100, height: 100}
+                image: {src: "img/sun.svg", width: 100, height: 100}
             },
             opacity: {value: .5, random: !1, anim: {enable: !1, speed: 1, opacity_min: .1, sync: !1}},
             size: {value: 3, random: !0, anim: {enable: !1, speed: 19.18081918081918, size_min: .1, sync: !1}},
