@@ -1,11 +1,11 @@
 .fancy_card {
-    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
     overflow: hidden;
     transition: all .3s ease;
 }
+
 .fancy_card:hover {
-    transform: translate3D(0,-1px,0) scale(1.03);
-    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
-    transition: all .4s ease;
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transform: scale(1.04);
     cursor: pointer;
 }

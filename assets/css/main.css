@@ -310,7 +310,7 @@ template {
     list-style-type: none
 }
 
-.fa-ul>li {
+.fa-ul > li {
     position: relative
 }
 
@@ -4841,7 +4841,7 @@ a img {
     color: #fff;
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .header .site-title {
         margin: 0;
         font-size: 65px
@@ -4856,7 +4856,7 @@ a img {
     margin-top: 10px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .header .site-description {
         font-size: 30px
     }
@@ -4873,7 +4873,7 @@ a img {
     margin: 10px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .header-links .link {
         font-size: 20px
     }
@@ -4908,7 +4908,7 @@ a img {
     background: #fff
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .header-icons .icon {
         width: 35px;
         height: 35px;
@@ -4954,7 +4954,7 @@ a img {
     max-width: 960px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     #about {
         width: 80%
     }
@@ -4977,7 +4977,7 @@ a img {
     font-size: 16px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .user {
         flex-wrap: nowrap;
         font-size: 60px
@@ -4998,7 +4998,7 @@ a img {
     margin: 0 auto
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     #projects {
         width: 80%
     }
@@ -5027,7 +5027,7 @@ a img {
     margin-right: 5px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .contents {
         margin-left: 0;
         width: 48%
@@ -5123,7 +5123,7 @@ a img {
     color: #FF7F50;
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .error {
         font-size: 35px
     }

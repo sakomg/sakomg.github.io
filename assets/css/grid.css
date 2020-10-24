@@ -12,19 +12,27 @@
 /*}*/
 
 .thumbnail {
-    display: block;
     width: 100%;
     height: 180px;
     object-fit: revert;
+    display: flex;
+    justify-content: center;
+    background: #e7e7e7;
+}
+
+.thumbnail img {
+    align-self: center;
+    height: 150px;
+    width: 150px;
 }
 
 .post-preview {
-    background-color: #fff;
+    background-color: #e7e7e7;
     padding: 15px;
 }
 
 .post-title {
-    color: black;
+    color: #171c28;
     margin: 0;
 }
 
