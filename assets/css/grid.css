@@ -17,7 +17,7 @@
     object-fit: revert;
     display: flex;
     justify-content: center;
-    background: #e7e7e7;
+    background: white;
 }
 
 .thumbnail img {
@@ -27,8 +27,8 @@
 }
 
 .post-preview {
-    background-color: #e7e7e7;
-    padding: 15px;
+    background-color: white;
+    padding: 0 15px 15px 15px;
 }
 
 .post-title {

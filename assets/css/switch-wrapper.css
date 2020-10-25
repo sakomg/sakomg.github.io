@@ -8,6 +8,10 @@ body .night::selection, html .night ::selection {
     color: #a115b2;
 }
 
+html .night .thumbnail, html .night .post-preview {
+    background: #e7e7e7;
+}
+
 html .night .error-link-home {
     color: #75bbfd;
 }
