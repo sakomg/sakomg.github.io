@@ -51,6 +51,15 @@ html .night .face {
     border: 3px solid #a115b2;
 }
 
+html .night .link-text-about {
+    text-decoration: blink;
+    color: #a115b2;
+}
+
+html .night .link-text-about:hover {
+    text-decoration: underline;
+}
+
 html .night .header-icons .icon {
     border: 2px solid #171c28;
     color: #171c28;

@@ -43,7 +43,8 @@ code, kbd, pre, samp {
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-skip: objects;
+    text-decoration: blink;
 }
 
 abbr[title] {
@@ -5129,20 +5130,17 @@ a img {
     }
 }
 
-.maven {
-    fill: #00a818;
-}
-
 .size-skills {
     height: 60px;
     width: 60px;
     margin-bottom: -3.5px;
 }
 
-/*@media all and (max-width: 555px){*/
-/*    .size-skills {*/
-/*        height: 60px;*/
-/*        width: 60px;*/
-/*        margin-bottom: -3.5px;*/
-/*    }*/
-/*}*/
+.link-text-about {
+    text-decoration: blink;
+    color: #1488CC;
+}
+
+.link-text-about:hover {
+    text-decoration: underline;
+}
