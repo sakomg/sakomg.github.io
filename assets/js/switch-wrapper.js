@@ -9,11 +9,12 @@ $(function () {
     if (night) {
         input.checked = true;
         body.classList.add('night');
+        moonParticle();
     }
 
     toggle.addEventListener('click', function () {
-        const isChecked = input.checked;
-        if (isChecked) {
+        const isCchecked = input.checked;
+        if (isCheked) {
             body.classList.remove('night');
             sunParticle();
         } else {
@@ -24,7 +25,7 @@ $(function () {
 });
 
 function sunParticle() {
-    new SweetScroll({}), particlesJS("particles-js", {
+    particlesJS("particles-js", {
         particles: {
             number: {
                 value: 30,
