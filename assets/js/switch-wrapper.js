@@ -13,8 +13,8 @@ $(function () {
     }
 
     toggle.addEventListener('click', function () {
-        const isCchecked = input.checked;
-        if (isCheked) {
+        const isChecked = input.checked;
+        if (isChecked) {
             body.classList.remove('night');
             sunParticle();
         } else {
