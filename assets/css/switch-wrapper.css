@@ -74,6 +74,18 @@ html .night .project-link {
     color: #cc156f;
 }
 
+html .night .btn-footer {
+    border: 1px solid #171c28;
+    color: #171c28;
+}
+
+html .night .btn-footer:active,
+html .night .btn-footer:hover {
+    background-color: #a115b2;
+    border-color: #a115b2;
+    color: #171c28;
+}
+
 html .night .devicon-github-plain {
     color: #6e5494;
 }

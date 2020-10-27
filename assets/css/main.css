@@ -5091,7 +5091,8 @@ a img {
     padding: 10px 0;
     margin-top: 100px;
     text-align: center;
-    color: #fff
+    color: #fff;
+    position: relative;
 }
 
 .footer .love {
@@ -5112,6 +5113,32 @@ a img {
     margin-right: 5px;
 }
 
+.btn-footer {
+    display: inline-block;
+    padding: 8px 11px 8px 11px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-footer:active,
+.btn-footer:hover {
+    background-color: #5347a8;
+    border-color: #5347a8;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
 .error {
     font-size: 25px;
     display: block;
@@ -5122,6 +5149,13 @@ a img {
 
 .error-link-home {
     color: #FF7F50;
+}
+
+@media only screen and (max-width: 550px) {
+    .btn-footer {
+        position: static;
+        margin: 0 0 15px 0;
+    }
 }
 
 @media only screen and (min-width: 550px) {
