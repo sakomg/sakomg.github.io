@@ -1,7 +1,9 @@
 .fancy_card {
-    /*box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);*/
+    box-shadow: 8px 14px 38px rgba(20, 136, 204, 0.06), 1px 3px 8px rgba(20, 136, 204, 0.03),
+    1px 3px 8px rgba(20, 136, 204, 0.03), 1px 3px 8px rgba(20, 136, 204, 0.03);
     overflow: hidden;
-    border: 1px solid #1488CC;
+    /*border: 1px solid #1488CC;*/
+    /*border-radius: 5px;*/
     transition: all .3s ease;
 }
 
