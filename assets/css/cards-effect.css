@@ -3,7 +3,7 @@
     1px 3px 8px rgba(20, 136, 204, 0.03), 1px 3px 8px rgba(20, 136, 204, 0.03);
     overflow: hidden;
     /*border: 1px solid #1488CC;*/
-    /*border-radius: 5px;*/
+    border-radius: 10px;
     transition: all .3s ease;
 }
 

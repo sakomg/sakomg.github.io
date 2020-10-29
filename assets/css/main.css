@@ -5066,6 +5066,7 @@ a img {
     color: #1488CC;
     background-color: transparent;
     border: 1px solid #1488CC;
+    border-radius: 5px;
     text-align: center;
     outline: 0;
     text-decoration: none;
