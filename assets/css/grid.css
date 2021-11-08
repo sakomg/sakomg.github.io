@@ -1,15 +1,9 @@
 .post-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, 285px);
+    gap: 40px;
     justify-content: center;
 }
-
-/*.post {*/
-/*    -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);*/
-/*    -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);*/
-/*    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);*/
-/*}*/
 
 .thumbnail {
     width: 100%;
