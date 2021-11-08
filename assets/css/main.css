@@ -4792,7 +4792,8 @@ figure,
 ol,
 p,
 ul {
-    margin: 1em 0
+    margin: 1em 0;
+    font-size: 18px;
 }
 
 a img {
