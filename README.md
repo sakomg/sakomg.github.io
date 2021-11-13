@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/fishand4ips/me.github.io?color=darkblue)
 ![GitHub top language](https://img.shields.io/github/languages/top/fishand4ips/me.github.io?color=orange)
 
-This [website](https://me.fishand4ips.tk/) serves as an online portfolio to showcase my web presence, resume, story.
+This [website](https://sakomg.github.io/) serves as an online portfolio to showcase my web presence, resume, story.
 
 ## Sections 📚
 
@@ -18,7 +18,7 @@ This [website](https://me.fishand4ips.tk/) serves as an online portfolio to show
 ✔️ Skills \
 ✔️ Featured projects
 
-To view a live example, **[click here](https://me.fishand4ips.tk/)**
+To view a live example, **[click here](https://sakomg.github.io/)**
 
 ## License 📄
 
