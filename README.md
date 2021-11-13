@@ -36,7 +36,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 You'll need [Git](https://git-scm.com) to be installed on your computer. 
 ```
 # clone this repository
-$ git clone https://github.com/fishand4ips/me.github.io.git
+$ git clone https://github.com/sakomg/sakomg.github.io.git
 ```
 
 Leave a :star: if you like it!
