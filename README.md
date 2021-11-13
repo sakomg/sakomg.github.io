@@ -1,4 +1,4 @@
-<img src="https://image.flaticon.com/icons/svg/168/168774.svg" width = "100px" height = "100px" alt="portfolio-icon">
+<img src="./assets/img/user.png" width = "100px" height = "100px" alt="portfolio-icon">
 
 # My Portfolio
 
