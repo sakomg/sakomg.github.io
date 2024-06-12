@@ -1,52 +1,52 @@
 .wrapper {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    margin: 20px 0 0 0
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin: 120px 0 0 0;
 }
 
 .wrapper .item {
-    visibility: hidden;
-    display: none;
+  visibility: hidden;
+  display: none;
 }
 
 .wrapper h2 {
-    font-size: 50px;
-    margin: 0;
-    color: #3a3a3a;
-    text-align: left;
+  font-size: 50px;
+  margin: 0;
+  color: #3a3a3a;
+  text-align: left;
 }
 
 .wrapper > div {
-    min-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: flex-end;
-    font-weight: bold;
-    color: #FF7F50;
+  min-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  color: #ff7f50;
 }
 
 .wrapper > div:after {
-    content: "";
-    width: 10px;
-    height: 4px;
-    display: block;
-    background: #171c28;
-    color: #FF7F50;
-    margin-bottom: 4px;
-    margin-left: 2px;
-    animation-duration: 350ms;
-    animation-name: fade;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+  content: "";
+  width: 10px;
+  height: 4px;
+  display: block;
+  background: #171c28;
+  color: #ff7f50;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  animation-duration: 350ms;
+  animation-name: fade;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fade {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

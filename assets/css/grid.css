@@ -1,38 +1,38 @@
 .post-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 285px);
-    gap: 50px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 285px);
+  gap: 50px;
+  justify-content: center;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 150px;
-    object-fit: revert;
-    display: flex;
-    justify-content: center;
-    background: white;
+  width: 100%;
+  height: 150px;
+  object-fit: revert;
+  display: flex;
+  justify-content: center;
+  background: white;
 }
 
 .thumbnail img {
-    align-self: center;
-    height: 100px;
-    width: 100px;
+  align-self: center;
+  height: 100px;
+  width: 100px;
 }
 
 .post-preview {
-    background-color: white;
-    padding: 0 15px 15px 15px;
+  background-color: white;
+  padding: 0 15px 15px 15px;
 }
 
 .post-title {
-    color: #171c28;
-    margin: 0;
+  color: #171c28;
+  margin: 0;
 }
 
 .post-intro {
-    color: #4b5156;
-    font-size: 14px;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
+  color: #4b5156;
+  font-size: 14px;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
 }
