@@ -1,90 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio Website" />
-    <meta name="author" content="Alexander Komegunov" />
-    <meta
-      name="keywords"
-      content="Alexander Komegunov, Alexander, Alexander Viktorovich Komegunov,
-        Alexander Viktorovich Komegunov PHTI, Alexander Viktorovich Komegunov BSU,
-        Komegunov, Alexander Komegunov Website, Alexander Viktorovich, Alexander Developer, Salesforce Developer,
-        Alexander ETH"
-    />
-    <link rel="shortcut icon" href="./assets/img/user.png" />
-    <title>Komegunov Alexander</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexander Komegunov</title>
+<meta name="description" content="Salesforce developer. Writes trading software on the side.">
+<link rel="canonical" href="https://sakomg.github.io/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<main>
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/photo.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/switch-wrapper.css" />
-    <link rel="stylesheet" href="./assets/css/typeng-ef.css" />
-    <link rel="stylesheet" href="./assets/css/cards-effect.css" />
-  </head>
+<button class="theme" type="button" aria-label="Switch to dark theme">
+<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+</button>
 
-  <body>
-    <div id="particles-js">
-      <div class="switch-wrapper">
-        <div class="sun"></div>
-        <div class="toggle-wrapper">
-          <input id="switch" type="checkbox" />
-          <label for="switch" id="toggle">Toggle</label>
-        </div>
-        <div class="moon"></div>
-      </div>
+<h1><svg class="mark" viewBox="0 0 44 32" aria-hidden="true"><path d="M42.5 16.0L42.4 17.0L42.1 18.0L41.5 19.0L40.7 20.0L39.8 21.0L38.6 21.9L37.2 22.8L35.7 23.7L34.0 24.5L32.3 25.3L30.3 26.1L28.3 26.8L26.3 27.4L24.1 28.0L22.0 28.6L19.9 29.0L17.7 29.4L15.7 29.8L13.7 30.1L11.8 30.3L10.0 30.4L8.3 30.5L6.8 30.5L5.4 30.4L4.2 30.3L3.3 30.1L2.5 29.8L1.9 29.4L1.6 29.0L1.5 28.6L1.6 28.0L1.9 27.4L2.5 26.8L3.3 26.1L4.2 25.3L5.4 24.5L6.8 23.7L8.3 22.8L10.0 21.9L11.7 21.0L13.7 20.0L15.7 19.0L17.7 18.0L19.9 17.0L22.0 16.0L24.1 15.0L26.3 14.0L28.3 13.0L30.3 12.0L32.2 11.0L34.0 10.1L35.7 9.2L37.2 8.3L38.6 7.5L39.8 6.7L40.7 5.9L41.5 5.2L42.1 4.6L42.4 4.0L42.5 3.4L42.4 3.0L42.1 2.6L41.5 2.2L40.7 1.9L39.8 1.7L38.6 1.6L37.2 1.5L35.7 1.5L34.0 1.6L32.2 1.7L30.3 1.9L28.3 2.2L26.3 2.6L24.1 3.0L22.0 3.4L19.9 4.0L17.7 4.6L15.7 5.2L13.7 5.9L11.8 6.7L10.0 7.5L8.3 8.3L6.8 9.2L5.4 10.1L4.2 11.0L3.3 12.0L2.5 13.0L1.9 14.0L1.6 15.0L1.5 16.0L1.6 17.0L1.9 18.0L2.5 19.0L3.3 20.0L4.2 21.0L5.4 21.9L6.8 22.8L8.3 23.7L10.0 24.5L11.8 25.3L13.7 26.1L15.7 26.8L17.7 27.4L19.9 28.0L22.0 28.6L24.1 29.0L26.3 29.4L28.3 29.8L30.3 30.1L32.3 30.3L34.0 30.4L35.7 30.5L37.2 30.5L38.6 30.4L39.8 30.3L40.7 30.1L41.5 29.8L42.1 29.4L42.4 29.0L42.5 28.6L42.4 28.0L42.1 27.4L41.5 26.8L40.7 26.1L39.8 25.3L38.6 24.5L37.2 23.7L35.7 22.8L34.0 21.9L32.2 21.0L30.3 20.0L28.3 19.0L26.3 18.0L24.1 17.0L22.0 16.0L19.9 15.0L17.7 14.0L15.7 13.0L13.7 12.0L11.8 11.0L10.0 10.1L8.3 9.2L6.8 8.3L5.4 7.5L4.2 6.7L3.3 5.9L2.5 5.2L1.9 4.6L1.6 4.0L1.5 3.4L1.6 3.0L1.9 2.6L2.5 2.2L3.3 1.9L4.2 1.7L5.4 1.6L6.8 1.5L8.3 1.5L10.0 1.6L11.7 1.7L13.7 1.9L15.7 2.2L17.7 2.6L19.9 3.0L22.0 3.4L24.1 4.0L26.3 4.6L28.3 5.2L30.3 5.9L32.3 6.7L34.0 7.5L35.7 8.3L37.2 9.2L38.6 10.1L39.8 11.0L40.7 12.0L41.5 13.0L42.1 14.0L42.4 15.0Z"/></svg>Alexander Komegunov</h1>
 
-      <div class="header">
-        <h1>
-          <span class="site-title">KOMEGUNOV ALEXANDER</span>
-          <span class="site-description"
-            >Salesforce Developer • Web3 Enthusiast • Radiophysicist</span
-          >
-        </h1>
-        <div class="header-icons">
-          <a
-            aria-label="My LinkedIn Profile"
-            target="_blank"
-            href="https://www.linkedin.com/in/alexander-komegunov/"
-          >
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Github Profile"
-            target="_blank"
-            href="https://github.com/sakomg"
-          >
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Resume"
-            target="_blank"
-            href="/assets/pdfs/Alexander_Komegunov_Resume_v4.pdf"
-          >
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="Send Email"
-            href="mailto:alekomegunov@gmail.com"
-            target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
+<p>I write Salesforce code for a living at Twistellar, and trading software for myself since the end of 2023. I studied <span class="wave">radiophysics</span> at BSU.</p>
 
-        <div class="wrapper">
-          <div build-text></div>
-          <span class="item">IN CRYPTO WE TRUST</span>
-        </div>
-      </div>
-    </div>
+<p class="contact">
+<a href="mailto:alekomegunov@gmail.com">alekomegunov@gmail.com</a>
+<a href="https://github.com/sakomg">GitHub</a>
+<a href="https://www.linkedin.com/in/alexander-komegunov/">LinkedIn</a>
+<a href="assets/pdfs/Alexander_Komegunov_Resume_v4.pdf">CV (PDF)</a>
+</p>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <script src="./assets/js/google-analytics.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/switch-wrapper.js"></script>
-    <script src="./assets/js/typing-ef.js"></script>
-  </body>
+<h2>Work</h2>
+
+<dl>
+<dt>2024–now</dt>
+<dd><b><a href="https://twistellar.com">Twistellar</a></b>, senior Salesforce developer. A customer portal and <abbr title="Configure, Price, Quote">CPQ</abbr> quote-to-order flows for a data center company: <abbr title="Lightning Web Components">LWC</abbr>, Apex, Experience Cloud.</dd>
+
+<dt>2023–now</dt>
+<dd><b>Self-employed</b>, the trading systems below.</dd>
+
+<dt>2021–2023</dt>
+<dd><b><a href="https://twistellar.com">Twistellar</a></b>, Salesforce developer, later team lead. CRM rollouts for car dealer groups in North America. I gathered requirements, split the work and did the code review.</dd>
+
+<dt>2016–2020</dt>
+<dd><b>Belarusian State University</b>, Faculty of Radiophysics and Computer Technologies.</dd>
+</dl>
+
+<p>Six Salesforce certifications, Platform Developer II among them. <a href="https://github.com/sakomg/salesforce-certifications">The list</a>.</p>
+
+<h2>Own projects</h2>
+
+<dl>
+<dt>2026</dt>
+<dd><b><a href="https://basisdeck.com">basisdeck</a></b>, an automated trading platform. It follows several blockchains and exchanges in real time and places trades on its own. Comes with its own web dashboard.</dd>
+
+<dt>2026</dt>
+<dd><b>A trading bot for the Lighter exchange</b>, running around the clock.</dd>
+
+<dt>2026</dt>
+<dd><b>Freepot</b>, a prize savings app inside Telegram. Your deposit stays yours and can be withdrawn at any time; each week one participant wins the interest.</dd>
+
+<dt>2025</dt>
+<dd><b>A trading system on the TON blockchain</b>, my first one. Running and profitable for over a year.</dd>
+</dl>
+
+<p class="aside">The code is private. Happy to walk through it on a call.</p>
+
+</main>
+<footer>Updated September 2026.</footer>
+<script src="assets/js/site.js"></script>
+</body>
 </html>
