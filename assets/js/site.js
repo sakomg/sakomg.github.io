@@ -44,18 +44,28 @@
       mark.setAttribute("d", d + "Z");
     }
 
+    function restPhase() {
+      return Math.PI / 2 + Math.round((phase - Math.PI / 2) / Math.PI) * Math.PI;
+    }
+
     function frame(now) {
       var dt = last ? Math.min(now - last, 50) / 1000 : 0;
       last = now;
-      speed += (target - speed) * Math.min(1, dt * 4);
-      phase += speed * dt;
-      draw();
-      if (target || Math.abs(speed) > 0.01) {
-        requestAnimationFrame(frame);
+      if (target) {
+        speed += (target - speed) * Math.min(1, dt * 4);
       } else {
+        speed += ((restPhase() - phase) * 6 - speed) * Math.min(1, dt * 5);
+      }
+      phase += speed * dt;
+      if (!target && Math.abs(speed) < 0.01 && Math.abs(restPhase() - phase) < 0.003) {
+        phase = restPhase();
+        draw();
         running = false;
         last = 0;
+        return;
       }
+      draw();
+      requestAnimationFrame(frame);
     }
 
     function spin(on) {

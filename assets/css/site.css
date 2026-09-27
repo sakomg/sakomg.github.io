@@ -54,7 +54,7 @@ a:hover { text-decoration-thickness: 2px; }
 abbr[title] { text-decoration: none; cursor: help; }
 abbr[title]:hover { text-decoration: underline dotted; text-underline-offset: 3px; }
 
-h1 { position: relative; margin: 0 0 0.6em; font-size: 1.9em; font-weight: normal; line-height: 1.15; letter-spacing: -0.005em; }
+h1 { position: relative; margin: 0; font-size: 1.9em; font-weight: normal; line-height: 1.15; letter-spacing: -0.005em; }
 .mark {
   position: absolute;
   top: 0.08em;
@@ -90,10 +90,11 @@ dd { margin: 0 0 1.05em; }
 
 .aside { color: var(--soft); }
 
+.masthead { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 1.15em; }
+
 .theme {
-  position: absolute;
-  top: 22px;
-  right: 26px;
+  flex: none;
+  margin-right: -8px;
   display: grid;
   place-items: center;
   width: 36px;
@@ -122,9 +123,10 @@ footer { max-width: 45em; margin: 4.5em 0 0 max(20px, 14vw); padding: 1em 20px 3
 
 @media (max-width: 600px) {
   body { font-size: 17px; }
-  main { margin-left: 20px; padding-top: 4.2em; }
+  main { margin-left: 20px; padding-top: 2.4em; }
   footer { margin-left: 20px; }
-  .theme { top: 14px; right: 12px; }
+  .masthead { display: block; }
+  .theme { position: absolute; top: 0; right: 0; margin: 0; }
   .mark { position: static; display: block; width: 1.5em; margin-bottom: 0.45em; }
   dl { display: block; }
   dt { padding: 0; }
