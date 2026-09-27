@@ -11,21 +11,75 @@
     if (button) button.setAttribute("aria-label", current() === "dark" ? "Switch to light theme" : "Switch to dark theme");
   }
 
+  var still = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  function apply(next) {
+    root.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    label();
+  }
+
+  function fade(next) {
+    root.classList.add("fading");
+    apply(next);
+    setTimeout(function () { root.classList.remove("fading"); }, 350);
+  }
+
+  function reveal(next, x, y) {
+    var radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+    var transition = document.startViewTransition(function () { apply(next); });
+    transition.ready.then(function () {
+      root.animate(
+        { clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + radius + "px at " + x + "px " + y + "px)"] },
+        { duration: 650, easing: "cubic-bezier(0.45, 0, 0.2, 1)", pseudoElement: "::view-transition-new(root)" }
+      );
+    });
+  }
+
   if (button) {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
       var next = current() === "dark" ? "light" : "dark";
-      root.classList.add("fading");
-      root.dataset.theme = next;
-      try { localStorage.setItem("theme", next); } catch (e) {}
-      label();
-      setTimeout(function () { root.classList.remove("fading"); }, 350);
+      if (!document.startViewTransition || still.matches) return fade(next);
+      var box = button.getBoundingClientRect();
+      var fromPointer = event.detail > 0;
+      reveal(next, fromPointer ? event.clientX : box.left + box.width / 2, fromPointer ? event.clientY : box.top + box.height / 2);
     });
     label();
   }
 
+  function drawSky() {
+    var seed = 20161;
+    function random() {
+      seed = (seed + 0x6d2b79f5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    }
+    var ns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("class", "sky");
+    svg.setAttribute("aria-hidden", "true");
+    for (var i = 0; i < 170; i++) {
+      var star = document.createElementNS(ns, "circle");
+      var size = random();
+      star.setAttribute("cx", (random() * 100).toFixed(2) + "%");
+      star.setAttribute("cy", (random() * 100).toFixed(2) + "%");
+      star.setAttribute("r", (0.35 + size * size * 0.95).toFixed(2));
+      star.setAttribute("opacity", (0.25 + random() * 0.55).toFixed(2));
+      if (random() < 0.16) {
+        star.setAttribute("class", "twinkle");
+        star.style.animationDuration = (2.5 + random() * 4).toFixed(1) + "s";
+        star.style.animationDelay = (-random() * 6).toFixed(1) + "s";
+      }
+      svg.appendChild(star);
+    }
+    document.body.prepend(svg);
+  }
+
+  drawSky();
+
   var mark = document.querySelector(".mark path");
   var title = document.querySelector("h1");
-  var still = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (mark && title && !still.matches) {
     var phase = Math.PI / 2;
     var speed = 0;
