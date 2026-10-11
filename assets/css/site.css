@@ -4,7 +4,7 @@
   --soft: #6a6d73;
   --rule: #e4e4e1;
   --link: #1d4ed8;
-  --wave: #1d4ed8;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3 Q4 0 8 3 T16 3' fill='none' stroke='%231d4ed8' stroke-width='1.2'/%3E%3C/svg%3E");
   color-scheme: light;
 }
 
@@ -14,7 +14,7 @@
   --soft: #9a9892;
   --rule: #2c2c2a;
   --link: #8fb0ff;
-  --wave: #8fb0ff;
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3 Q4 0 8 3 T16 3' fill='none' stroke='%238fb0ff' stroke-width='1.2'/%3E%3C/svg%3E");
   color-scheme: dark;
 }
 
@@ -25,7 +25,7 @@
     --soft: #9a9892;
     --rule: #2c2c2a;
     --link: #8fb0ff;
-      --wave: #8fb0ff;
+    --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3 Q4 0 8 3 T16 3' fill='none' stroke='%238fb0ff' stroke-width='1.2'/%3E%3C/svg%3E");
     color-scheme: dark;
   }
 }
@@ -72,17 +72,16 @@ p { margin: 0 0 0.9em; text-wrap: pretty; }
 }
 .wave:hover {
   cursor: default;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3 Q4 0 8 3 T16 3' fill='none' stroke='%231d4ed8' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-image: var(--wave);
   background-size: 16px 6px;
   background-repeat: repeat-x;
   animation: signal 0.9s linear infinite;
 }
-:root[data-theme="dark"] .wave:hover { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3 Q4 0 8 3 T16 3' fill='none' stroke='%238fb0ff' stroke-width='1.2'/%3E%3C/svg%3E"); }
 @keyframes signal { to { background-position: 16px 100%; } }
 
 dl { margin: 0; display: grid; grid-template-columns: 5.6em 1fr; column-gap: 1.2em; }
 dt { color: var(--soft); font-size: 0.84em; padding-top: 0.22em; font-variant-numeric: tabular-nums; }
-dd { margin: 0 0 1.05em; }
+dd { margin: 0 0 1.05em; text-wrap: pretty; }
 
 .aside { color: var(--soft); }
 
@@ -114,19 +113,19 @@ dd { margin: 0 0 1.05em; }
 
 .theme {
   flex: none;
-  margin-right: -8px;
   display: grid;
   place-items: center;
   width: 36px;
   height: 36px;
   padding: 0;
-  border: 0;
+  border: 1px solid var(--rule);
+  border-color: color-mix(in srgb, var(--soft) 45%, transparent);
   border-radius: 50%;
   background: none;
   color: var(--soft);
   cursor: pointer;
 }
-.theme:hover { color: var(--ink); }
+.theme:hover { color: var(--ink); border-color: var(--soft); }
 .theme:focus-visible { outline: 1px solid var(--link); outline-offset: 2px; }
 .theme svg { width: 18px; height: 18px; transition: transform 0.5s ease; }
 .theme:hover svg { transform: rotate(-18deg); }
@@ -138,8 +137,7 @@ dd { margin: 0 0 1.05em; }
   :root:not([data-theme="light"]) .theme .moon { display: none; }
 }
 
-footer { max-width: 45em; margin: 4.5em auto 0; padding: 1em 0 3em; box-sizing: content-box; border-top: 1px solid var(--rule); font-size: 0.8em; color: var(--soft); }
-
+footer { width: min(45em, 100% - 40px); margin: 4.5em auto 0; padding: 1em 0 3em; border-top: 1px solid var(--rule); font-size: 0.8em; color: var(--soft); }
 
 @media (max-width: 900px) {
   .sky {
@@ -153,8 +151,7 @@ footer { max-width: 45em; margin: 4.5em auto 0; padding: 1em 0 3em; box-sizing: 
 @media (max-width: 600px) {
   body { font-size: 17px; }
   main { padding-top: 3.6em; }
-  footer { margin: 4.5em 20px 0; }
-  h1 { font-size: 1.42em; }
+  h1 { font-size: clamp(1.15em, 6.3vw, 1.42em); }
   dl { display: block; }
   dt { padding: 0; }
   dd { margin-bottom: 1.1em; }
@@ -167,7 +164,7 @@ footer { max-width: 45em; margin: 4.5em auto 0; padding: 1em 0 3em; box-sizing: 
 }
 
 @media print {
-  :root { --paper: #fff; --ink: #000; --soft: #444; --link: #000; color-scheme: light; }
+  :root, :root[data-theme="dark"] { --paper: #fff; --ink: #000; --soft: #444; --link: #000; color-scheme: light; }
   body { font-size: 10.5pt; }
   main { margin: 0; padding: 0; max-width: none; }
   .theme, .aside, .mark, .sky, footer { display: none; }

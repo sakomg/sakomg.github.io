@@ -1,42 +1,36 @@
-<img src="./assets/img/user.png" width = "100px" height = "100px" alt="portfolio-icon">
+# sakomg.github.io
 
-# My Portfolio
+Personal page of Alexander Komegunov, live at [sakomg.github.io](https://sakomg.github.io/).
 
-[![author](https://img.shields.io/badge/author-sakomg-yellowgreen)](https://github.com/sakomg/)
-![GitHub repo size](https://img.shields.io/github/repo-size/sakomg/me.github.io)
-![Website](https://img.shields.io/website?down_color=critical&down_message=offline&label=Website%20status&up_color=success&up_message=online&url=https%3A%2F%2Fme.sakomg.tk%2F)
-![GitHub last commit](https://img.shields.io/github/last-commit/sakomg/me.github.io?color=darkblue)
-![GitHub top language](https://img.shields.io/github/languages/top/sakomg/me.github.io?color=orange)
+One HTML file, one stylesheet, one short script. No build step, no dependencies, no fonts to download.
 
-This [website](https://sakomg.github.io/) serves as an online portfolio to showcase my web presence, resume, story.
+- Light and dark themes. The page follows the system setting; the button in the masthead overrides it and remembers the choice.
+- A quiet star field appears in the dark theme, outside the text column.
+- System serif stack: Charter, Sitka Text, Cambria, Georgia.
+- Print styles: decoration is hidden, external links print with their addresses.
+- `404.html` is what GitHub Pages serves for unknown paths.
 
-## Sections 📚
+## Files
 
-✔️ Head\
-✔️ Contact me\
-✔️ About me\
-✔️ Skills \
-✔️ Featured projects
-
-To view a live example, **[click here](https://sakomg.github.io/)**
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## Features :zap:
-
-- Clean, Simple and Modern UI Design.
-- Uses No CSS or JavaScript Frameworks or libraries as dependencies.
-- Built with only HTML, CSS and a bit of JavaScript 🔨.
-- Loads fast.
-
-## Getting Started 🚀
-
-You'll need [Git](https://git-scm.com) to be installed on your computer. 
 ```
-# clone this repository
-$ git clone https://github.com/sakomg/sakomg.github.io.git
+index.html
+404.html
+assets/css/site.css   layout, themes, print
+assets/js/site.js     theme switch, star field, the mark in the masthead
+assets/img/           favicon as SVG with PNG fallbacks, social preview image
+assets/pdfs/          resume versions; index.html links the current one
 ```
 
-Leave a :star: if you like it!
+## Running locally
+
+Any static server will do:
+
+```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000/.
+
+## License
+
+MIT, see [LICENSE](./LICENSE).
