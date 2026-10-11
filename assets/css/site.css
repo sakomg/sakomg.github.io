@@ -64,7 +64,18 @@ h1 { margin: 0; font-size: 1.6em; font-weight: normal; line-height: 1.15; letter
 h2 { margin: 2.4em 0 0.8em; font-size: 1em; font-weight: bold; }
 p { margin: 0 0 0.9em; text-wrap: pretty; }
 
-.contact a { margin-right: 0.9em; }
+.contact a { margin-right: 0.9em; white-space: nowrap; }
+.contact svg {
+  width: 0.85em;
+  height: 0.85em;
+  margin-right: 0.3em;
+  vertical-align: -0.08em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .wave {
   padding-bottom: 5px;
@@ -79,11 +90,9 @@ p { margin: 0 0 0.9em; text-wrap: pretty; }
 }
 @keyframes signal { to { background-position: 16px 100%; } }
 
-dl { margin: 0; display: grid; grid-template-columns: 5.6em 1fr; column-gap: 1.2em; }
+dl { margin: 0; display: grid; grid-template-columns: 8.4em 1fr; column-gap: 1.2em; }
 dt { color: var(--soft); font-size: 0.84em; padding-top: 0.22em; font-variant-numeric: tabular-nums; }
 dd { margin: 0 0 1.05em; text-wrap: pretty; }
-
-.aside { color: var(--soft); }
 
 .sky {
   position: fixed;
@@ -167,7 +176,7 @@ footer { width: min(45em, 100% - 40px); margin: 4.5em auto 0; padding: 1em 0 3em
   :root, :root[data-theme="dark"] { --paper: #fff; --ink: #000; --soft: #444; --link: #000; color-scheme: light; }
   body { font-size: 10.5pt; }
   main { margin: 0; padding: 0; max-width: none; }
-  .theme, .aside, .mark, .sky, footer { display: none; }
+  .theme, .mark, .contact svg, .sky, footer { display: none; }
   a { text-decoration: none; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: var(--soft); }
   dd { break-inside: avoid; }
