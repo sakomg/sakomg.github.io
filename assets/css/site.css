@@ -90,7 +90,7 @@ p { margin: 0 0 0.9em; text-wrap: pretty; }
 }
 @keyframes signal { to { background-position: 16px 100%; } }
 
-dl { margin: 0; display: grid; grid-template-columns: 8.4em 1fr; column-gap: 1.2em; }
+dl { margin: 0; display: grid; grid-template-columns: 5.6em 1fr; column-gap: 1.2em; }
 dt { color: var(--soft); font-size: 0.84em; padding-top: 0.22em; font-variant-numeric: tabular-nums; }
 dd { margin: 0 0 1.05em; text-wrap: pretty; }
 
